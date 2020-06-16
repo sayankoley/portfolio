@@ -1,0 +1,75 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+/* buttons */
+
+.button {
+    padding: 0.8rem 3.3rem !important;
+
+    font-family: "monterast";
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-top: 15px;
+    position: relative;
+
+}
+
+.primary-btn {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+
+}
+
+.primary-btn::after,
+secondery-btn::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+    background: var(--gradient-color);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.secondery-btn {
+    background: whites;
+    background-clip: padding-box;
+    color: black;
+    transition: background 0.3s ease;
+    border: 3px solid var(--primary-color);
+}
+
+.secondery-btn:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+/* css-varribles */
+:root {
+    --primary-color: #4458dc;
+    --primary-color3: #854fee;
+    --title-color: #141313;
+    --title-color: #77777777;
+    --border-color: #301f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 335, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.305);
+}
