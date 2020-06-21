@@ -6,7 +6,7 @@ body {
 /* buttons */
 
 .button {
-    padding: 0.8rem 3.3rem !important;
+    padding: 9px 18px !important;
 
     font-family: "monterast";
     font-weight: 500 !important;
@@ -16,42 +16,44 @@ body {
     background-color: transparent;
     margin-top: 15px;
     position: relative;
-
 }
 
 .primary-btn {
     background: var(--gradient-color);
-    background-clip: padding-box;
     color: whitesmoke;
     transition: background 0.3s ease;
+    border: 3px solid transparent;
 }
 
 .primary-btn:hover {
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
-
+    border-image: var(--gradient-color);
+    border-image-slice: 1;
 }
 
-.primary-btn::after,
+/* .primary-btn::after,
 secondery-btn::after {
-    position: absolute;
-    content: "";
-    top: -3px;
-    left: -3px;
-    bottom: -3px;
-    right: -3px;
-    background: var(--gradient-color);
-    z-index: -1;
-    border-radius: 4px;
-}
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  background: var(--gradient-color);
+  z-index: -1;
+  border-radius: 4px;
+} */
 
 .secondery-btn {
     background: whites;
     background-clip: padding-box;
     color: black;
     transition: background 0.3s ease;
-    border: 3px solid var(--primary-color);
+    border: 3px solid transparent;
+    border-image: var(--gradient-color);
+    border-image-slice: 1;
 }
 
 .secondery-btn:hover {
@@ -59,8 +61,6 @@ secondery-btn::after {
     color: whitesmoke;
     box-shadow: var(--box-shadow);
 }
-
-
 
 /* css-varribles */
 :root {
